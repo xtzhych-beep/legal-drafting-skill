@@ -1,5 +1,10 @@
 # legal-drafting
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Claude Code Skill](https://img.shields.io/badge/Claude%20Code-Skill-8A63D2)](https://claude.com/claude-code)
+[![GitHub stars](https://img.shields.io/github/stars/xtzhych-beep/legal-drafting-skill?style=social)](https://github.com/xtzhych-beep/legal-drafting-skill/stargazers)
+[![用过的来说两句](https://img.shields.io/badge/%E7%94%A8%E8%BF%87%E7%9A%84-%E6%9D%A5%E8%AF%B4%E4%B8%A4%E5%8F%A5-brightgreen)](https://github.com/xtzhych-beep/legal-drafting-skill/issues/new/choose)
+
 一个 **Claude Code 技能（Skill）**：起草中国法律文书——起诉状、答辩状、律师函、合同、通知函件、婚内财产协议等，覆盖民事、刑事、劳动仲裁、婚姻家事。
 
 **它出自一位执业律师的日常办案**——先解决自己的问题，用顺手了，再拿出来分享。里面没有一条规则是凭空设计的，都是办案时踩过、或差点踩到的坑。

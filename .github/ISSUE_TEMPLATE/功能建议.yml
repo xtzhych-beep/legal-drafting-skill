@@ -1,0 +1,25 @@
+name: 功能建议
+description: 缺什么文书类型？哪条规则应该改？办案里遇到的情况它没覆盖？
+title: "[建议] "
+labels: ["功能建议"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **最欢迎的一类：你在真实办案里踩过的坑。** 比"希望能加个 XX 格式"有用得多。
+  - type: textarea
+    id: scenario
+    attributes:
+      label: 你想解决的是什么场景？
+      description: 说具体的案子类型和你的实际处境，不用脱敏到看不出问题。
+      placeholder: |
+        例如：办离婚案时经常要出分居协议，但每个当事人对财产的口径不一样，
+        现在的模板走下来总要自己重写第三段……
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 你希望它怎么做？
+    validations:
+      required: false

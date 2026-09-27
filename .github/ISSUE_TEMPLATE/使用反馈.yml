@@ -1,0 +1,50 @@
+name: 使用反馈
+description: 用下来感觉怎么样？哪里帮到你了、哪里反而添乱，都欢迎说
+title: "[反馈] "
+labels: ["使用反馈"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        不用写得很正式，几句话就够。**你遇到的情况本身就有价值**——尤其是"本来以为它能干这个，结果不行"那一种。
+
+        > 反馈是公开的。如果不想公开身份，**不必写真名**，写个城市或执业年限就行。
+  - type: dropdown
+    id: scenario
+    attributes:
+      label: 你主要拿它做什么文书？
+      multiple: true
+      options:
+        - 合同类（审查意见书、起草/修订、解除协议）
+        - 通知函件（解除通知、催告函、律师函、声明）
+        - 民事（起诉状、答辩状、代理词、上诉状）
+        - 刑事（辩护词、取保候审申请、法律意见书）
+        - 劳动仲裁
+        - 婚姻家事（婚内财产协议、离婚协议、抚养权）
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 用下来什么感觉
+      description: 哪一步帮到你了？哪一步反而添乱？
+      placeholder: |
+        例如：第一次用是起草一份解除通知。它确实先回去核了合同原文，
+        没有直接写"恢复原状"。但……
+    validations:
+      required: true
+  - type: textarea
+    id: gap
+    attributes:
+      label: 有没有它没做好、或者你以为它会做但没做的事？
+      description: 这条最值钱。没有就写"暂无"。
+    validations:
+      required: false
+  - type: input
+    id: env
+    attributes:
+      label: 你的使用环境（可选）
+      description: 比如 Claude Code 版本、有没有开联网检索
+    validations:
+      required: false

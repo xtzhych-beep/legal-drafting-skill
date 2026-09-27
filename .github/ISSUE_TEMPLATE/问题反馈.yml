@@ -1,0 +1,37 @@
+name: 出问题了
+description: 没装上、没启动、产出的东西不对、法条引错了——都报这里
+title: "[问题] "
+labels: ["问题"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ⚠️ **如果技能引用了错误的法条、或者产出的文书有法律上的硬伤，请一定报上来。**
+        这类问题优先级最高——它不是"体验不好"，是**可能让人在真实案子里出错**。
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 哪一类问题？
+      options:
+        - 装不上 / 没生效（技能没被识别）
+        - 前置检索没跑（没去查办案指引）
+        - 产出的文书格式不对
+        - 法条引用有误（条号、内容、效力状态）
+        - 法律分析有问题（该主张的没主张、不该主张的主张了）
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 发生了什么
+      description: 你输入了什么、它产出了什么、你期望的是什么
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 相关片段（可选）
+      description: 贴上它产出的那一段即可。**请把当事人信息、案号换掉**，不要贴真实案件材料。
+    validations:
+      required: false
